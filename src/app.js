@@ -10,6 +10,6 @@ app.get("/", (req, res) => {
   res.send("Hello there");
 });
 
-app.post("/message", message);
+app.post("/chatgpt", message);
 
 module.exports = app;
