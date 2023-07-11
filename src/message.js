@@ -21,7 +21,7 @@ module.exports = async (req, res) => {
     }
 
     // Process message with OpenAI's GPT API and return response
-    const response = await chatCompletion(message);
+    const response = await chatCompletion(message, req.body.WaId);
     twiml.message(response);
 
     // Send the response back to Twilio
